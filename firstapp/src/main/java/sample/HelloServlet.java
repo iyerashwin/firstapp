@@ -25,8 +25,13 @@ public class HelloServlet extends HttpServlet {
 		response.setContentType("text/html");
 
 		// Actual logic goes here.
+		String str1 = request.getParameter("string1");
+		String str2	= request.getParameter("string2");
+					
+		//String newstr = "test";
+		String newstr = MyConcatenator.concatenate(str1,str2);
 		PrintWriter out = response.getWriter();
-		out.println("<h1>Hurray !!\n This Servlet is built using Maven!! </h1>");
+		out.println("<h1>Hurray !!\n This Servlet is built using Maven!! "+ newstr + "</h1>");
 	}
 
 	
