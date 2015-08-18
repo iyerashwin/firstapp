@@ -1,4 +1,4 @@
-package sampleTest;
+package sampletest;
 
 import org.junit.Test;
 import static junit.framework.Assert.*;
@@ -6,12 +6,11 @@ import sample.*;
 
 public class MyConcatenatorTest {
 
-    @Test
-    public void testConcatenate(){
-        String concatenated =
-                MyConcatenator.concatenate(
-                        "one", "two", "three", "four");
+	@Test
+	public void testConcatenate() {
+		String concatenated = MyConcatenator.concatenate("one", "two", "three",
+				"four");
 
-        assertEquals("one,two,three,four", concatenated);
-    }
+		assertEquals("one,two,three,four", concatenated);
+	}
 }
