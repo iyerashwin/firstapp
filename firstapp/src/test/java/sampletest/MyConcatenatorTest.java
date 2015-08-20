@@ -11,6 +11,6 @@ public class MyConcatenatorTest {
 		String concatenated = MyConcatenator.concatenate("one", "two", "three",
 				"four");
 
-		assertEquals("onetwo,three,four", concatenated);
+		assertEquals("one,two,three,four", concatenated);
 	}
 }
