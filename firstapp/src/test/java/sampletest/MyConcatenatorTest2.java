@@ -4,7 +4,7 @@ import org.junit.Test;
 import static junit.framework.Assert.*;
 import sample.*;
 
-public class MyConcatenatorTest {
+public class MyConcatenatorTest2 {
 
 	@Test
 	public void testConcatenate() {
